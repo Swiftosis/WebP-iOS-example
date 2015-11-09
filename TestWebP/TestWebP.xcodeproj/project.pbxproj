@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD6B62EADD58BFF3830B5109 /* libPods-TestWebP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D066FA079D1412BDF265BB /* libPods-TestWebP.a */; };
 		B62ADEF116A8335400C4FEB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B62ADEF016A8335400C4FEB4 /* UIKit.framework */; };
 		B62ADEF316A8335400C4FEB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B62ADEF216A8335400C4FEB4 /* Foundation.framework */; };
 		B62ADEF516A8335400C4FEB4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B62ADEF416A8335400C4FEB4 /* CoreGraphics.framework */; };
@@ -29,10 +30,12 @@
 		B62ADF2816A8341300C4FEB4 /* test7.webp in Resources */ = {isa = PBXBuildFile; fileRef = B62ADF1E16A8341300C4FEB4 /* test7.webp */; };
 		B62ADF2916A8341300C4FEB4 /* test8.webp in Resources */ = {isa = PBXBuildFile; fileRef = B62ADF1F16A8341300C4FEB4 /* test8.webp */; };
 		B62ADF2A16A8341300C4FEB4 /* test9.webp in Resources */ = {isa = PBXBuildFile; fileRef = B62ADF2016A8341300C4FEB4 /* test9.webp */; };
-		B62ADF2C16A8346500C4FEB4 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B62ADF2B16A8346500C4FEB4 /* WebP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45168492C91C85D4F89F54EE /* Pods-TestWebP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestWebP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestWebP/Pods-TestWebP.debug.xcconfig"; sourceTree = "<group>"; };
+		A0D066FA079D1412BDF265BB /* libPods-TestWebP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestWebP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B02BF287B32EB74E91D31E87 /* Pods-TestWebP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestWebP.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestWebP/Pods-TestWebP.release.xcconfig"; sourceTree = "<group>"; };
 		B62ADEEC16A8335400C4FEB4 /* TestWebP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestWebP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62ADEF016A8335400C4FEB4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B62ADEF216A8335400C4FEB4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,7 +63,6 @@
 		B62ADF1E16A8341300C4FEB4 /* test7.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = test7.webp; sourceTree = "<group>"; };
 		B62ADF1F16A8341300C4FEB4 /* test8.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = test8.webp; sourceTree = "<group>"; };
 		B62ADF2016A8341300C4FEB4 /* test9.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = test9.webp; sourceTree = "<group>"; };
-		B62ADF2B16A8346500C4FEB4 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebP.framework; path = "../libwebp-build/WebP.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,22 +70,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B62ADF2C16A8346500C4FEB4 /* WebP.framework in Frameworks */,
 				B62ADEF116A8335400C4FEB4 /* UIKit.framework in Frameworks */,
 				B62ADEF316A8335400C4FEB4 /* Foundation.framework in Frameworks */,
 				B62ADEF516A8335400C4FEB4 /* CoreGraphics.framework in Frameworks */,
+				AD6B62EADD58BFF3830B5109 /* libPods-TestWebP.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A5F548CEA366BD2FC098825 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45168492C91C85D4F89F54EE /* Pods-TestWebP.debug.xcconfig */,
+				B02BF287B32EB74E91D31E87 /* Pods-TestWebP.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B62ADEE116A8335400C4FEB4 = {
 			isa = PBXGroup;
 			children = (
 				B62ADEF616A8335400C4FEB4 /* TestWebP */,
 				B62ADEEF16A8335400C4FEB4 /* Frameworks */,
 				B62ADEED16A8335400C4FEB4 /* Products */,
+				3A5F548CEA366BD2FC098825 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,10 +110,10 @@
 		B62ADEEF16A8335400C4FEB4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B62ADF2B16A8346500C4FEB4 /* WebP.framework */,
 				B62ADEF016A8335400C4FEB4 /* UIKit.framework */,
 				B62ADEF216A8335400C4FEB4 /* Foundation.framework */,
 				B62ADEF416A8335400C4FEB4 /* CoreGraphics.framework */,
+				A0D066FA079D1412BDF265BB /* libPods-TestWebP.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -159,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B62ADF1316A8335400C4FEB4 /* Build configuration list for PBXNativeTarget "TestWebP" */;
 			buildPhases = (
+				1A2AD9108496409D4AB981A8 /* Check Pods Manifest.lock */,
 				B62ADEE816A8335400C4FEB4 /* Sources */,
 				B62ADEE916A8335400C4FEB4 /* Frameworks */,
 				B62ADEEA16A8335400C4FEB4 /* Resources */,
+				E38C87B5965344A794FC94B9 /* Embed Pods Frameworks */,
+				9C4FB823387D95A241528E54 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -223,6 +238,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A2AD9108496409D4AB981A8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9C4FB823387D95A241528E54 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestWebP/Pods-TestWebP-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E38C87B5965344A794FC94B9 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestWebP/Pods-TestWebP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B62ADEE816A8335400C4FEB4 /* Sources */ = {
@@ -318,6 +381,7 @@
 		};
 		B62ADF1416A8335400C4FEB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45168492C91C85D4F89F54EE /* Pods-TestWebP.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -335,6 +399,7 @@
 		};
 		B62ADF1516A8335400C4FEB4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B02BF287B32EB74E91D31E87 /* Pods-TestWebP.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
